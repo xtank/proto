@@ -1,0 +1,11 @@
+package loginproto;
+
+
+message cs_enter_server {
+    required uint32 userid = 1;
+}
+
+message sc_enter_server {
+    required uint32 userid = 1;
+}
+
