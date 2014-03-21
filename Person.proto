@@ -1,0 +1,14 @@
+package x.tank.net.message ;
+
+
+message cs_test_cmd
+{
+	// command ID   001
+}
+
+message sc_test_cmd
+{
+    required int32 id = 1;
+  	required string name = 2;
+  	optional string email = 3;
+}
