@@ -1,4 +1,4 @@
-package loginproto;
+package x.tank.net.message ;
 
 
 message cs_enter_server {
