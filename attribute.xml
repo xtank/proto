@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+in_msg 消费的统计项
+out_msg 输出的统计项
+in_amount_msg 消费数量统计项
+out_amount_msg 输出数量统计项
+log 为1的话会保存进user-action-log，默认为0; id22000~30000此字段无效，默认为保存
+add_threshold 
+daily_limit_key 每日上限key
+daily_limit_max 每日上限max
+daily_restrict 每日严格控制，不能越过上限
+-->
+<data>
+    <!-- 用户永久属性 -->
+</data>
