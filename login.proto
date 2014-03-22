@@ -1,4 +1,4 @@
-package x.tank.net.message ;
+package onlineproto;
 
 
 message cs_enter_server {
