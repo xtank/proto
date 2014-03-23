@@ -1,4 +1,5 @@
 package onlineproto;
+import "data.proto";
 
 message player_data_t {
     required uint32 usierid = 1;
