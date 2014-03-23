@@ -1,0 +1,15 @@
+package onlineproto;
+
+message player_data_t {
+    required uint32 usierid = 1;
+    required uint32 status = 2; //o outside 1 inside free 2 inside ready 3 inside busy
+};
+
+message room_data_t {
+    required uint32 id = 1;
+    required uint32 ownerid = 2;
+    required uint32 mapid = 3;
+    required uint32 status = 4; //0 free 1 busy
+    repeated player_data_t playlist = 5;
+    optional uint32 passwd = 6;
+};

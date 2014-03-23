@@ -1,0 +1,52 @@
+package onlineproto;
+import "data.proto";
+
+message cs_get_room_list {
+}
+
+message sc_get_room_list {
+    repeated room_data_t room_list = 1;
+}
+
+message cs_enter_room {
+    required uint32 room_id = 1;
+}
+
+message sc_enter_room {
+}
+
+message cs_leave_room {
+}
+
+message sc_leave_room {
+}
+
+message cs_inside_ready {
+}
+
+message sc_inside_ready {
+}
+
+message cs_inside_start{
+}
+
+message sc_inside_start{
+}
+
+message cs_notify_room_update{
+}
+
+message sc_notify_room_update{
+    required uint32 oper = 1; //0 update 1 add 2 del
+    required room_data_t room = 2;
+}
+
+
+message cs_create_room {
+    required uint32 map_id = 1;
+    required string name = 2;
+    required uint32 passwd = 3;
+}
+
+message sc_create_room {
+}
