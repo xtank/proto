@@ -1,8 +1,8 @@
 package onlineproto;
 
-cs_notify_player_update {
+message cs_notify_player_update {
 }
 
-sc_notify_player_update {
+message sc_notify_player_update {
     required player_data_t player = 1;
 }
