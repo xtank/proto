@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<maps>
+	<map id="1" name="测试地图1" res="">
+		<team count="3" homePosition="" homeRes="">
+			<member bornPosition="" />
+			<member bornPosition="" />
+			<member bornPosition="" />
+		</team>
+		<team count="3" homePosition="" homeRes="">
+			<member bornPosition="" />
+			<member bornPosition="" />
+			<member bornPosition="" />
+		</team>
+	</map>
+	
+</maps>
