@@ -12,8 +12,6 @@ class MyException(Exception):
 
 sourceFilePath = './command.xml'
 targetFilePath = '../../../XTankNet/src/x/tank/net/core/CommandSet.as'
-# x.tank.net.core
-#targetFilePath = 'UserAttr.as'
 
 print " --------->>> 读取 ", sourceFilePath
 #
@@ -73,15 +71,17 @@ for node in doc.getElementsByTagName("command"):
     nodeCS = node.getAttribute("cs")
     nodeSC = node.getAttribute("sc")
 
+    print nodeId, nodeDes, nodeCS, nodeSC
+
     if nodeId in idList:
         raise NameError('重复的id:[' + nodeId + ']')
     else:
         idList.append(nodeId)
         contents.append(
-"               public static const ${0: < 20}: Command=new Command({1}, {2}, {3}); // {4}", nodeId,nodeId,nodeCS,nodeSC, nodeDes)
+            "       public static const ${0}: Command = new Command({1}, {2}, {3}); // {4}".format(nodeId, nodeId, nodeCS, nodeSC, nodeDes))
 
     # print nodeDes
-normalAttrCount=len(contents)
+normalAttrCount = len(contents)
 print " --------->>> 共有 ", normalAttrCount, "条数据被处理"
 
 
