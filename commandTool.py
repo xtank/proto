@@ -11,7 +11,7 @@ class MyException(Exception):
     pass
 
 sourceFilePath = './command.xml'
-targetFilePath = '../../../XTankNet/src/x/tank/net/core/CommandSet.as'
+targetFilePath = '../../XTankNet/src/x/tank/net/core/CommandSet.as'
 
 print " --------->>> 读取 ", sourceFilePath
 #
@@ -44,20 +44,6 @@ fileTemplateTail = """
 """
 
 fileContent = ""
-
-#<?xml version="1.0" encoding="UTF-8"?>
-#<data>
-#
-#    <section id="100" des="客户端逻辑模块与逻辑服务器通讯协议">
-#        <!--进服务器初始化相关协议 101-110-->
-#        <command id="101" name="cs_enter_srv" des="进入在线服务器" cs="cs_enter_server" sc="sc_enter_server"/>
-#
-#    </section>
-#
-#</data>
-# public static const $101:Command = new
-# Command(101,cs_enter_server,sc_enter_server) ;  // 通信样例
-
 
 # print sys.getdefaultencoding()
 idList = []
