@@ -1,4 +1,3 @@
-@@ -1,51 +0,0 @@
 CC=g++
 PROTO_FILES=$(wildcard *.proto)
 SRC_FILES=$(PROTO_FILES:%.proto=../%.pb.cc)
