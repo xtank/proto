@@ -1,0 +1,11 @@
+package onlineproto;
+
+
+message cs_keep_live {
+    required uint32 time = 1;
+}
+
+message sc_keep_live {
+    required uint32 time = 1;
+}
+
