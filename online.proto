@@ -7,5 +7,6 @@ message cs_keep_live {
 
 message sc_keep_live {
     required uint32 time = 1;
+    required uint32 server_time = 2;
 }
 
