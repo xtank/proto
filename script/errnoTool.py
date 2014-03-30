@@ -10,8 +10,8 @@ import os.path
 class MyException(Exception):
     pass
 
-sourceFilePath = './command.xml'
-targetFilePath = '../../XTankNet/src/x/tank/net/core/CommandSet.as'
+sourceFilePath = '../errno.xml'
+targetFilePath = '../../../XTankNet/locale/zh_CN/error.properties'
 
 print " --------->>> 读取 ", sourceFilePath
 #
@@ -19,52 +19,24 @@ sourceFileManager = open(sourceFilePath, 'r')
 sourceContent = sourceFileManager.read()
 sourceFileManager.close()
 
-fileTemplateHead = """
-package x.tank.net.core
-{
-    import onlineproto.* ;
-    import x.game.log.core.Logger ;
-
-	/**
-	 * command list
-	 * @author	fraser
-	 */
-	public final class CommandSet
-	{
-        static public function initCMDS():void
-        {
-            Logger.info("init cmds") ;
-        }
-
-"""
-fileTemplateTail = """
-
-	}
-}
-"""
-
 fileContent = ""
 
-# print sys.getdefaultencoding()
 idList = []
 contents = []
 doc = xml.dom.minidom.parseString(sourceContent)
-for node in doc.getElementsByTagName("command"):
-    nodeName = str(node.getAttribute("name"))
+for node in doc.getElementsByTagName("err"):
     nodeId = str(node.getAttribute("id"))
     nodeDes = node.getAttribute("des")
     nodeDes = nodeDes.encode('utf-8')
-    nodeCS = node.getAttribute("cs")
-    nodeSC = node.getAttribute("sc")
 
-    print nodeId, nodeDes, nodeCS, nodeSC
+    print nodeId, nodeDes
 
     if nodeId in idList:
         raise NameError('重复的id:[' + nodeId + ']')
     else:
         idList.append(nodeId)
         contents.append(
-            "       public static const ${0}: Command = new Command({1}, {2}, {3}); // {4}".format(nodeId, nodeId, nodeCS, nodeSC, nodeDes))
+            "Key_{0} = {1}".format(nodeId, nodeDes))
 
     # print nodeDes
 normalAttrCount = len(contents)
@@ -78,9 +50,7 @@ else:
     # os.mknod(fileSave)
     fp = open(targetFilePath, 'w')
 
-fp.write(fileTemplateHead)
 fp.write("\n".join(contents))
-fp.write(fileTemplateTail)
 fp.close()
 
-print " --------->>> 生成 CommandSet.as 成功！"
+print " --------->>> 生成 error.properties 成功！"

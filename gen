@@ -1,2 +1,0 @@
-protoc --plugin=protoc-gen-as3="protoc-gen-as3" --as3_out=../../XTankNet/src/ ./*.proto
-echo "create protocol files complete!"
