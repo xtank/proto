@@ -11,7 +11,7 @@ class MyException(Exception):
     pass
 
 sourceFilePath = '../errno.xml'
-targetFilePath = '../../../XTankNet/locale/zh_CN/error.properties'
+targetFilePath = '../../client/XTankNet/locale/zh_CN/error.properties'
 
 print " --------->>> 读取 ", sourceFilePath
 #

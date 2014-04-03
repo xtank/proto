@@ -11,7 +11,7 @@ class MyException(Exception):
     pass
 
 sourceFilePath = '../command.xml'
-targetFilePath = '../../../XTankNet/src/x/tank/net/core/CommandSet.as'
+targetFilePath = '../../client/XTankNet/src/x/tank/net/CommandSet.as'
 
 print " --------->>> 读取 ", sourceFilePath
 #
