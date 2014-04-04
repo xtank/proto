@@ -2,10 +2,23 @@
 <data>
 
 	<section id="100" des="客户端逻辑模块与逻辑服务器通讯协议">
-		<!--进服务器初始化相关协议 101-110-->
+		<!--进服务器初始化相关协议 101-150-->
 		<command id="101" name="cs_enter_srv" des="进入在线服务器" cs="cs_enter_server" sc="sc_enter_server"/>
 		<command id="102" name="cs_keep_live" des="心跳包" cs="cs_keep_live" sc="sc_keep_live"/>
-	
+		
+		<!-- 大厅相关协议 151 - 200 -->
+		<command id="151" name="cs_get_room_list" des="拉取房间列表" cs="cs_get_room_list" sc="sc_get_room_list"/>
+		<command id="152" name="cs_enter_room" des="进入房间" cs="cs_enter_room" sc="sc_enter_room"/>
+		<command id="153" name="cs_leave_room" des="离开房间" cs="cs_leave_room" sc="sc_leave_room"/>
+		<command id="154" name="cs_inside_ready" des="玩家准备" cs="cs_inside_ready" sc="sc_inside_ready"/>
+		<command id="155" name="cs_inside_start" des="房主开始游戏" cs="cs_inside_start" sc="sc_inside_start"/>
+		<command id="156" name="cs_notify_room_update" des="房间信息更新" cs="cs_notify_room_update" sc="sc_notify_room_update"/>
+		<command id="157" name="cs_create_room" des="创建房间" cs="cs_create_room" sc="sc_create_room"/>
+		
+		<!-- 玩家相关协议 201 - 300 -->
+		<command id="201"  name="cs_notify_player_update" des="玩家状态更新" cs="cs_notify_player_update" sc="sc_notify_player_update"/>
+		
+		
     </section>
 
 </data>
