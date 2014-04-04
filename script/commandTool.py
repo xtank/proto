@@ -20,10 +20,11 @@ sourceContent = sourceFileManager.read()
 sourceFileManager.close()
 
 fileTemplateHead = """
-package x.tank.net.core
+package x.tank.net
 {
     import onlineproto.* ;
     import x.game.log.core.Logger ;
+    import x.game.net.core.Command;
 
 	/**
 	 * command list
