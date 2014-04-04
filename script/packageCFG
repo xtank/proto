@@ -1,0 +1,2 @@
+# 打包配置表
+zip -r ../../client/XTankPublish/config/cfg ../cfg
