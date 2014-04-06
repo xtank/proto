@@ -12,8 +12,9 @@ class MyException(Exception):
 
 sourceFilePath = '../command.xml'
 targetFilePath = '../../client/XTankNet/src/x/tank/net/CommandSet.as'
+isExistFile = os.path.exists(sourceFilePath)
 
-print " --------->>> 读取 ", sourceFilePath
+print " --------->>> 读取 [", sourceFilePath, "]文件 ", isExistFile
 #
 sourceFileManager = open(sourceFilePath, 'r')
 sourceContent = sourceFileManager.read()
@@ -36,7 +37,6 @@ package x.tank.net
         {
             Logger.info("init cmds") ;
         }
-
 """
 fileTemplateTail = """
 
@@ -65,7 +65,7 @@ for node in doc.getElementsByTagName("command"):
     else:
         idList.append(nodeId)
         contents.append(
-            "       public static const ${0}: Command = new Command({1}, {2}, {3}); // {4}".format(nodeId, nodeId, nodeCS, nodeSC, nodeDes))
+            "      public static const ${0}: Command = new Command({1}, {2}, {3});      // {4}".format(nodeId, nodeId, nodeCS, nodeSC, nodeDes))
 
     # print nodeDes
 normalAttrCount = len(contents)
