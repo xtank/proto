@@ -1,7 +1,7 @@
 package onlineproto;
 
 message player_data_t {
-    required uint32 usierid = 1;
+    required uint32 userid = 1;
     required uint32 status = 2; //o outside 1 inside free 2 inside ready 3 inside busy
 };
 
