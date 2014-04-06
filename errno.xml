@@ -3,4 +3,7 @@
     <err id='1' name="sys_err" des="哎呀~~，出现了一点小状况~~" />
     <err id='2' name="proto_format_err" des="一点小状况~~" />
     <err id='3' name="cmd_not_find" des="一点小状况~~" />
+    <err id='4' name="room_not_exist" des="一点小状况~~" />
+    <err id='5' name="player_already_in_other_room" des="一点小状况~~" />
+    <err id='6' name="create_room_failed" des="一点小状况~~" />
 </data> 

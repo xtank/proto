@@ -38,14 +38,14 @@ message cs_notify_room_update{
 
 message sc_notify_room_update{
     required uint32 oper = 1; //0 update 1 add 2 del
-    required room_data_t room = 2;
+    optional room_data_t room = 2;
 }
 
 
 message cs_create_room {
     required uint32 map_id = 1;
     required string name = 2;
-    required uint32 passwd = 3;
+    optional uint32 passwd = 3;
 }
 
 message sc_create_room {
