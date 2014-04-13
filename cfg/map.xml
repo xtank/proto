@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+map:
+	id   地图id
+	name 地图名称
+	diffcult 地图难度 1~5
+	res   地图资源编号
+
+team:
+	count 队伍最大人数
+	
+
+ -->
 <maps>
-	<map id="1" name="3v3测试地图" res="">
+	<map id="1" name="3v3测试地图" diffcult="5" res="">
 		<team count="3" homePosition="" homeRes="">
 			<member bornPosition="" />
 			<member bornPosition="" />
@@ -12,7 +24,7 @@
 			<member bornPosition="" />
 		</team>
 	</map>
-	<map id="2" name="1v1测试地图" res="">
+	<map id="2" name="1v1测试地图" diffcult="2"  res="">
 		<team count="1" homePosition="" homeRes="">
 			<member bornPosition="" />
 		</team>
@@ -20,7 +32,7 @@
 			<member bornPosition="" />
 		</team>
 	</map>
-	<map id="3" name="2v2测试地图" res="">
+	<map id="3" name="2v2测试地图" diffcult="3"  res="">
 		<team count="2" homePosition="" homeRes="">
 			<member bornPosition="" />
 			<member bornPosition="" />
