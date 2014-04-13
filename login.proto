@@ -7,5 +7,6 @@ message cs_enter_server {
 
 message sc_enter_server {
     required uint32 userid = 1;
+    required string name = 2 ;
 }
 
