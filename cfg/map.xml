@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- 
+<!--
 map:
 	id   地图id
 	name 地图名称
@@ -8,38 +8,48 @@ map:
 
 team:
 	count 队伍最大人数
-	
+
 
  -->
 <maps>
 	<map id="1" name="3v3测试地图" difficult="5" res="">
 		<team count="3" homePosition="" homeRes="">
-			<member bornPosition="" />
-			<member bornPosition="" />
-			<member bornPosition="" />
+			<member bornPosition=""/>
+			<member bornPosition=""/>
+			<member bornPosition=""/>
 		</team>
 		<team count="3" homePosition="" homeRes="">
-			<member bornPosition="" />
-			<member bornPosition="" />
-			<member bornPosition="" />
+			<member bornPosition=""/>
+			<member bornPosition=""/>
+			<member bornPosition=""/>
+		</team>
+
+		<barriers>
+			<barrier id="1" reg="x,y"/>
+			<barrier id="1" reg="x,y"/>
+			<barrier id="1" reg="x,y"/>
+			<barrier id="1" reg="x,y"/>
+			<barrier id="1" reg="x,y"/>
+		</barriers>
+	</map>
+
+
+	<map id="2" name="1v1测试地图" difficult="2" res="">
+		<team count="1" homePosition="" homeRes="">
+			<member bornPosition=""/>
+		</team>
+		<team count="1" homePosition="" homeRes="">
+			<member bornPosition=""/>
 		</team>
 	</map>
-	<map id="2" name="1v1测试地图" difficult="2"  res="">
-		<team count="1" homePosition="" homeRes="">
-			<member bornPosition="" />
-		</team>
-		<team count="1" homePosition="" homeRes="">
-			<member bornPosition="" />
-		</team>
-	</map>
-	<map id="3" name="2v2测试地图" difficult="3"  res="">
+	<map id="3" name="2v2测试地图" difficult="3" res="">
 		<team count="2" homePosition="" homeRes="">
-			<member bornPosition="" />
-			<member bornPosition="" />
+			<member bornPosition=""/>
+			<member bornPosition=""/>
 		</team>
 		<team count="2" homePosition="" homeRes="">
-			<member bornPosition="" />
-			<member bornPosition="" />
+			<member bornPosition=""/>
+			<member bornPosition=""/>
 		</team>
 	</map>
 </maps>

@@ -1,0 +1,13 @@
+<!-- 
+	id
+	block 0 不可通过  1 可通过
+	occupys 占据的点集合
+	* 	* 	*
+	* (0,0) *
+	* 	* 	*
+	type  0 不可击穿  1 可击穿
+ -->
+
+<barriers>
+	<barrier id="1" occupys="0,0;1,0;0,1" block="0" type="1" hp=""/>
+</barriers>

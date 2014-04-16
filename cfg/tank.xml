@@ -1,0 +1,14 @@
+<tanks>
+	<tank id="1" hp="100" speed="10" defense="10" attack="10" attackSpeed="2" attackScope="50"/>
+	<tank id="2" hp="100" speed="10" defense="10" attack="10" attackSpeed="2" attackScope="50"/>
+	<tank id="3" hp="100" speed="10" defense="10" attack="10" attackSpeed="2" attackScope="50"/>
+</tanks>
+
+<!--
+*.血量
+*.移动速度  像素/秒
+*.防御力		
+*.攻击速度  次/秒
+*.攻击射程  像素
+*.攻击力
+-->
