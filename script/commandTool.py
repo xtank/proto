@@ -7,6 +7,11 @@ import sys
 import os.path
 
 
+print "#######################################"
+print "         Command Tool Start"
+print "#######################################"
+
+
 class MyException(Exception):
     pass
 

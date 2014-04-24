@@ -1,2 +1,7 @@
 # 打包配置表
+
+echo "#######################################"
+echo "         Package Tool Start"
+echo "#######################################"
+
 zip -r ../../client/XTankPublish/config/cfg ../cfg

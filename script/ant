@@ -1,0 +1,6 @@
+
+echo "#######################################"
+echo "         Compile Tool Start"
+echo "#######################################"
+
+cd ../../client/XTankTools/ant;ant dlls
