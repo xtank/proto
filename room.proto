@@ -13,7 +13,7 @@ message cs_enter_room {
 }
 
 message sc_enter_room {
-    required room_data_t room = 1;
+    required uint32 roomid = 1;
 }
 
 message cs_leave_room {
@@ -50,7 +50,7 @@ message cs_create_room {
 }
 
 message sc_create_room {
-    required room_data_t room = 1;
+    required uint32 roomid = 1;
 }
 
 message cs_cancel_inside_ready {
