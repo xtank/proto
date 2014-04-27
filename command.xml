@@ -14,6 +14,8 @@
 		<command id="155" name="cs_inside_start" des="房主开始游戏" cs="cs_inside_start" sc="sc_inside_start"/>
 		<command id="156" name="cs_notify_room_update" des="房间信息更新" cs="cs_notify_room_update" sc="sc_notify_room_update"/>
 		<command id="157" name="cs_create_room" des="创建房间" cs="cs_create_room" sc="sc_create_room"/>
+		<command id="158" name="cs_cancel_inside_ready" des="玩家取消准备" cs="cs_cancel_inside_ready" sc="sc_cancel_inside_ready"/>
+		<command id="159" name="cs_select_team" des="玩家选择队伍" cs="cs_select_team" sc="sc_select_team"/>
 		
 		<!-- 玩家相关协议 201 - 300 -->
 		<command id="201"  name="cs_notify_player_update" des="玩家状态更新" cs="cs_notify_player_update" sc="sc_notify_player_update"/>
