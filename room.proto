@@ -53,3 +53,18 @@ message sc_create_room {
     required room_data_t room = 1;
 }
 
+message cs_cancel_inside_ready {
+}
+
+message sc_cancel_inside_ready {
+}
+
+message cs_select_team {
+    required uint32 teamid = 1;
+}
+
+message sc_select_team {
+    required uint32 teamid = 1;
+}
+
+
