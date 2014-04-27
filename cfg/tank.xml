@@ -1,14 +1,15 @@
 <tanks>
-	<tank id="1" hp="100" speed="10" defense="10" attack="10" attackSpeed="2" attackScope="50"/>
-	<tank id="2" hp="100" speed="10" defense="10" attack="10" attackSpeed="2" attackScope="50"/>
-	<tank id="3" hp="100" speed="10" defense="10" attack="10" attackSpeed="2" attackScope="50"/>
+	<tank id="1" name="坦克1号" hp="100" speed="10" defense="10" attack="30" attackSpeed="5" attackScope="50"/>
+	<tank id="2" name="坦克2号" hp="500" speed="6" defense="40" attack="30" attackSpeed="2" attackScope="100"/>
+	<tank id="3" name="坦克3号" hp="800" speed="4" defense="80" attack="30" attackSpeed="2" attackScope="200"/>
+	<tank id="4" name="坦克4号" hp="900" speed="3" defense="80" attack="30" attackSpeed="2" attackScope="200"/>
 </tanks>
 
 <!--
-*.血量
-*.移动速度  像素/秒
-*.防御力		
-*.攻击速度  次/秒
-*.攻击射程  像素
-*.攻击力
+*.血量 [500-1000]
+*.移动速度  像素/秒 [2-10]
+*.防御力	[0-100]
+*.攻击速度  次/秒 [1-5]
+*.攻击射程  像素 [100-300]
+*.攻击力 [10-100]
 -->
