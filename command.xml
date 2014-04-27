@@ -5,6 +5,7 @@
 		<!--进服务器初始化相关协议 101-150-->
 		<command id="101" name="cs_enter_srv" des="进入在线服务器" cs="cs_enter_server" sc="sc_enter_server"/>
 		<command id="102" name="cs_keep_live" des="心跳包" cs="cs_keep_live" sc="sc_keep_live"/>
+		<command id="103" name="cs_create_role" des="create role" cs="cs_create_role" sc="sc_create_role"/>
 		
 		<!-- 大厅相关协议 151 - 200 -->
 		<command id="151" name="cs_get_room_list" des="拉取房间列表" cs="cs_get_room_list" sc="sc_get_room_list"/>
