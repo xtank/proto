@@ -49,4 +49,6 @@ message cs_create_room {
 }
 
 message sc_create_room {
+    required room_data_t room = 1;
 }
+
