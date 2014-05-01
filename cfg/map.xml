@@ -32,8 +32,6 @@ team:
 			<barrier id="1" reg="x,y"/>
 		</barriers>
 	</map>
-
-
 	<map id="2" name="1v1测试地图" difficult="2" res="">
 		<team id="1" count="1" homePosition="" homeRes="">
 			<member bornPosition=""/>
