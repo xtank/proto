@@ -14,12 +14,12 @@ team:
 <maps>
 	<map id="1" name="3v3测试地图" difficult="5" res="">
 		<team id="1" count="3" homePosition="" homeRes="">
-			<member bornPosition=""/>
-			<member bornPosition=""/>
-			<member bornPosition=""/>
+			<member id="1" bornPosition=""/>
+			<member id="2" bornPosition=""/>
+			<member id="3" bornPosition=""/>
 		</team>
 		<team id="2" count="3" homePosition="" homeRes="">
-			<member bornPosition=""/>
+			<member id="1" bornPosition=""/>
 			<member bornPosition=""/>
 			<member bornPosition=""/>
 		</team>
@@ -34,20 +34,20 @@ team:
 	</map>
 	<map id="2" name="1v1测试地图" difficult="2" res="">
 		<team id="1" count="1" homePosition="" homeRes="">
-			<member bornPosition=""/>
+			<member id="1" bornPosition=""/>
 		</team>
 		<team id="2" count="1" homePosition="" homeRes="">
-			<member bornPosition=""/>
+			<member id="1" bornPosition=""/>
 		</team>
 	</map>
 	<map id="3" name="2v2测试地图" difficult="3" res="">
 		<team id="1" count="2" homePosition="" homeRes="">
-			<member bornPosition=""/>
-			<member bornPosition=""/>
+			<member id="1" bornPosition=""/>
+			<member id="2" bornPosition=""/>
 		</team>
 		<team id="2" count="2" homePosition="" homeRes="">
-			<member bornPosition=""/>
-			<member bornPosition=""/>
+			<member id="1" bornPosition=""/>
+			<member id="2" bornPosition=""/>
 		</team>
 	</map>
 </maps>

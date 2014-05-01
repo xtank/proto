@@ -61,14 +61,17 @@ message sc_cancel_inside_ready {
 
 message cs_select_team {
     required uint32 teamid = 1;
+    required uint32 seatid = 2 ;
 }
 
 message sc_select_team {
     required uint32 teamid = 1;
+    required uint32 seatid = 2 ;
 }
 
 message cs_select_tank {
     required uint32 tankid = 1;
+
 }
 
 message sc_select_tank {

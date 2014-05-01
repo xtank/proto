@@ -6,6 +6,7 @@ message player_data_t {
     required string name = 3 ;
     required uint32 teamid = 4;
     required uint32 tankid = 5 ;
+    required uint32 seatid = 6 ;
 };
 
 message room_data_t {
