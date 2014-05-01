@@ -67,4 +67,11 @@ message sc_select_team {
     required uint32 teamid = 1;
 }
 
+message cs_select_tank {
+    required uint32 tankid = 1;
+}
+
+message sc_select_tank {
+    required uint32 tankid = 1;
+}
 
