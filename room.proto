@@ -72,6 +72,5 @@ message cs_select_tank {
 }
 
 message sc_select_tank {
-    required uint32 tankid = 1;
 }
 

@@ -5,6 +5,7 @@ message player_data_t {
     required uint32 status = 2; //o outside 1 inside free 2 inside ready 3 inside busy
     required string name = 3 ;
     required uint32 teamid = 4;
+    required uint32 tankid = 5 ;
 };
 
 message room_data_t {
