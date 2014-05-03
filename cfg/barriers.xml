@@ -1,11 +1,15 @@
 <!-- 
 	id
-	block 0 不可通过  1 可通过
 	type  0 不可击穿  1 可击穿
 	hp 如果不可击穿 该值为无限大  如果可击穿则为血量
 	cls  资源名
  -->
 
 <barriers>
-	<barrier id="1" block="0" type="1" hp="" cls=""/>
+	<barrier id="1" reg="16,16" type="1" hp="" cls="Barrier_1" occpy=""/>
+	<barrier id="2" reg="16,20" type="1" hp="" cls="Barrier_2" occpy=""/>
+	<barrier id="3" reg="16,50" type="1" hp="" cls="Barrier_3" occpy=""/>
+	<barrier id="4" reg="16,16" type="1" hp="" cls="Barrier_4" occpy=""/>
+	<barrier id="5" reg="64,110" type="1" hp="" cls="Barrier_5" occpy=""/>
+	<barrier id="6" reg="13,16" type="1" hp="" cls="Barrier_6" occpy=""/>
 </barriers>
