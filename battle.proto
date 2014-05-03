@@ -1,0 +1,70 @@
+package onlineproto;
+import "data.proto";
+
+
+// 客户端资源准备完成后通知服务器的消息包
+message cs_battle_ready
+{
+
+}
+
+message sc_battle_ready
+{
+
+}
+
+message cs_notify_battle_start
+{
+
+}
+
+// 通知开始游戏
+message sc_notify_battle_start
+{
+	
+}
+
+message cs_notify_member_leave
+{
+
+}
+
+// 通知成员离线
+message sc_notify_member_leave
+{
+	required uint32 userid = 1 ;
+}
+
+
+// 通知移动
+message cs_tank_move
+{
+	required uint32 start_x = 1 ;
+	required uint32 start_y = 2 ;
+	required uint32 start_time = 3 ; // 开始移动的时间
+	required uint32 dir = 4 ; // 移动的方向
+}
+
+// 服务器需要在房间内广播此包
+message sc_tank_move
+{
+	required uint32 userid = 1 ;
+	required uint32 start_x = 2 ;
+	required uint32 start_y = 3 ;
+	required uint32 start_time = 4 ; // 开始移动的时间
+	required uint32 dir = 5 ; // 移动的方向
+}
+
+// 通知停止移动
+message cs_tank_move_stop
+{
+	required uint32 stop_x = 1 ;
+	required uint32 stop_y = 2 ;
+}
+
+message sc_tank_move_stop
+{
+	required uint32 userid = 1 ;
+	required uint32 stop_x = 2 ;
+	required uint32 stop_y = 3 ;
+}

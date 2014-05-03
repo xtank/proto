@@ -18,3 +18,27 @@ message room_data_t {
     optional uint32 passwd = 6;
     required string name = 7 ;
 };
+
+// 战斗数据包
+message battle_data_t {
+    required uint32 mapid = 1;
+    required battle_team_data_t team1 = 2 ;
+    required battle_team_data_t team2 = 3 ;
+}
+
+//战斗队伍数据包
+message battle_team_data_t 
+{
+    required uint32 teamid = 1 ;
+    repeated battle_member_data_t member_list = 2;
+}
+
+//战斗队伍成员数据包
+message battle_member_data_t
+{
+    required uint32 userid = 1;
+    required uint32 tankid = 2 ;
+    required uint32 x = 3 ;
+    required uint32 y = 4 ;
+    required uint32 dir = 5 ; // 0 up 1 down 2 left 3 right
+}
