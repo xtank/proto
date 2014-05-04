@@ -1,15 +1,13 @@
-<!-- 
-	id
-	type  0 不可击穿  1 可击穿
-	hp 如果不可击穿 该值为无限大  如果可击穿则为血量
-	cls  资源名
- -->
-
+<!-- id
+type  0 不可击穿  1 可击穿
+hp 如果不可击穿 该值为无限大  如果可击穿则为血量
+cls  资源名
+occpy  x1,y1;x2,y2 [占据的不可通过的点集合] -->
 <barriers>
-	<barrier id="1" reg="16,16" type="1" hp="" cls="Barrier_1" occpy=""/>
-	<barrier id="2" reg="16,20" type="1" hp="" cls="Barrier_2" occpy=""/>
-	<barrier id="3" reg="16,50" type="1" hp="" cls="Barrier_3" occpy=""/>
-	<barrier id="4" reg="16,16" type="1" hp="" cls="Barrier_4" occpy=""/>
-	<barrier id="5" reg="64,110" type="1" hp="" cls="Barrier_5" occpy=""/>
-	<barrier id="6" reg="13,16" type="1" hp="" cls="Barrier_6" occpy=""/>
+<barrier id="1" reg="-16.5,-14.5" type="0" hp="4294967295" cls="Barrier_1" occpy="-1,-1;0,-1;1,-1;1,0;0,0;-1,0;-1,1;0,1;1,1"/>
+<barrier id="2" reg="-17,-19.5" type="0" hp="4294967295" cls="Barrier_2" occpy="-1,0;0,0;1,0;1,1;0,1;-1,1"/>
+<barrier id="3" reg="-16.5,-56.5" type="0" hp="4294967295" cls="Barrier_3" occpy="0,0"/>
+<barrier id="4" reg="-17,-26.5" type="0" hp="4294967295" cls="Barrier_4" occpy="0,0"/>
+<barrier id="5" reg="-13.5,-18" type="0" hp="4294967295" cls="Barrier_5" occpy="0,0"/>
+<barrier id="6" reg="-61.5,-118.5" type="0" hp="4294967295" cls="Barrier_6" occpy="-1,0;0,0;1,0;-1,-1;0,-1;1,-1"/>
 </barriers>
