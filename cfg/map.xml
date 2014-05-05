@@ -4,24 +4,27 @@ map:
 	id   地图id
 	name 地图名称
 	diffcult 地图难度 1~5
-	res   地图资源编号
-
 team:
 	count 队伍最大人数
-elemLayer
+	home id-x,y   老家 资源以及坐标位置
+	bornPosition  x,y  出生点
+bgLayer:
+	背景层
+elemLayer:
 	id-x,y
-pathLyaer 地形中不可通过的点集合
+pathLyaer: 
+	地形中不可通过的点集合
 	x1,y1;x2,y2
 	
  -->
 <maps>
-	<map id="1" name="3v3测试地图" difficult="5" res="">
-		<team id="1" count="3" homePosition="" homeRes="">
+	<map id="1" name="3v3测试地图" difficult="5">
+		<team id="1" count="3" home="">
 			<member id="1" bornPosition=""/>
 			<member id="2" bornPosition=""/>
 			<member id="3" bornPosition=""/>
 		</team>
-		<team id="2" count="3" homePosition="" homeRes="">
+		<team id="2" count="3" home="">
 			<member id="1" bornPosition=""/>
 			<member id="2" bornPosition=""/>
 			<member id="3" bornPosition=""/>
@@ -49,11 +52,11 @@ pathLyaer 地形中不可通过的点集合
 		<topLayers>
 		</topLayers>
 	</map>
-	<map id="2" name="1v1测试地图" difficult="2" res="">
-		<team id="1" count="1" homePosition="" homeRes="">
+	<map id="2" name="1v1测试地图" difficult="2">
+		<team id="1" count="1" home="">
 			<member id="1" bornPosition=""/>
 		</team>
-		<team id="2" count="1" homePosition="" homeRes="">
+		<team id="2" count="1" home="">
 			<member id="1" bornPosition=""/>
 		</team>
 
@@ -66,12 +69,12 @@ pathLyaer 地形中不可通过的点集合
 		<topLayers>
 		</topLayers>
 	</map>
-	<map id="3" name="2v2测试地图" difficult="3" res="">
-		<team id="1" count="2" homePosition="" homeRes="">
+	<map id="3" name="2v2测试地图" difficult="3">
+		<team id="1" count="2" home="">
 			<member id="1" bornPosition=""/>
 			<member id="2" bornPosition=""/>
 		</team>
-		<team id="2" count="2" homePosition="" homeRes="">
+		<team id="2" count="2" home="">
 			<member id="1" bornPosition=""/>
 			<member id="2" bornPosition=""/>
 		</team>
