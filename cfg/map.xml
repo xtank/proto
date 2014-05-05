@@ -7,7 +7,7 @@ map:
 team:
 	count 队伍最大人数
 	home id-x,y   老家 资源以及坐标位置
-	bornPosition  x,y  出生点
+	born  x,y  出生点
 bgLayer:
 	背景层
 elemLayer:
@@ -20,14 +20,14 @@ pathLyaer:
 <maps>
 	<map id="1" name="3v3测试地图" difficult="5">
 		<team id="1" count="3" home="">
-			<member id="1" bornPosition=""/>
-			<member id="2" bornPosition=""/>
-			<member id="3" bornPosition=""/>
+			<member id="1" born=""/>
+			<member id="2" born=""/>
+			<member id="3" born=""/>
 		</team>
 		<team id="2" count="3" home="">
-			<member id="1" bornPosition=""/>
-			<member id="2" bornPosition=""/>
-			<member id="3" bornPosition=""/>
+			<member id="1" born=""/>
+			<member id="2" born=""/>
+			<member id="3" born=""/>
 		</team>
 
 		<bgLayer>Tank_Bg_10</bgLayer>
@@ -54,10 +54,10 @@ pathLyaer:
 	</map>
 	<map id="2" name="1v1测试地图" difficult="2">
 		<team id="1" count="1" home="">
-			<member id="1" bornPosition=""/>
+			<member id="1" born=""/>
 		</team>
 		<team id="2" count="1" home="">
-			<member id="1" bornPosition=""/>
+			<member id="1" born=""/>
 		</team>
 
 		<bgLayer>Tank_Bg_7</bgLayer>
@@ -71,12 +71,12 @@ pathLyaer:
 	</map>
 	<map id="3" name="2v2测试地图" difficult="3">
 		<team id="1" count="2" home="">
-			<member id="1" bornPosition=""/>
-			<member id="2" bornPosition=""/>
+			<member id="1" born=""/>
+			<member id="2" born=""/>
 		</team>
 		<team id="2" count="2" home="">
-			<member id="1" bornPosition=""/>
-			<member id="2" bornPosition=""/>
+			<member id="1" born=""/>
+			<member id="2" born=""/>
 		</team>
 
 		<bgLayer>Tank_Bg_3</bgLayer>
