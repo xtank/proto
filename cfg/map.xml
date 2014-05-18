@@ -1,36 +1,29 @@
 <maps>
-<map id="1" name="3v3测试地图" difficult="5">
-<team id="1" home="0,0">
-<member id='0' born='0,0'/>
-<member id='1' born='0,0'/></team>
-<team id="2" home="0,0">
-<member id='0' born='0,0'/>
-<member id='1' born='0,0'/></team>
-<bgLayer>Tank_Bg_10</bgLayer>
-<lowLayer>1-10,10;3-70,90</lowLayer>
-<elemLayer>3-42,1;6-32,6;3-35,10;13-83,10;2-88,10;3-33,12;6-68,15;3-10,16;2-55,17;5-42,22;4-50,22;3-31,25;11-80,25;3-2,26;4-22,26;9-69,27;14-1,29;3-12,30;18-76,30;18-84,30;10-37,31;3-56,31;10-60,33;3-17,34;1-85,34;3-23,35;3-32,36;7-42,36;12-71,36;5-68,38;3-88,40;5-42,44;3-11,45;3-24,46;6-60,46;10-49,54</elemLayer>
-<pathLyaer>32,37;31,36;33,36</pathLyaer>
-</map>
-<map id="2" name="1v1测试地图" difficult="2">
-<team id="1" home="0,0">
-<member id='0' born='0,0'/></team>
-<team id="2" home="0,0">
-<member id='0' born='0,0'/></team>
-<bgLayer>Tank_Bg_7</bgLayer>
-<lowLayer>1-10,10;3-70,90</lowLayer>
-<elemLayer>1-48,8;1-34,9;15-44,29;10-60,35;3-27,44;6-46,45</elemLayer>
-<pathLyaer></pathLyaer>
-</map>
-<map id="3" name="2v2测试地图" difficult="3">
-<team id="1" home="0,0">
-<member id='0' born='0,0'/>
-<member id='1' born='0,0'/></team>
-<team id="2" home="0,0">
-<member id='0' born='0,0'/>
-<member id='1' born='0,0'/></team>
-<bgLayer>Tank_Bg_3</bgLayer>
-<lowLayer>1-10,10;3-70,90</lowLayer>
-<elemLayer>1-26,19;3-30,20;1-49,24;3-46,25;15-69,33</elemLayer>
-<pathLyaer></pathLyaer>
-</map>
+	<map id="1" name="1v1测试地图" difficult="2">
+		<team id="1" home="0,0-2">
+			<member id='0' born='0,0'/>
+		</team>
+		<team id="2" home="0,0-3">
+			<member id='0' born='0,0'/>
+		</team>
+		<bgLayer>Tank_Bg_7</bgLayer>
+		<lowLayer>1-10,10;3-70,90</lowLayer>
+		<elemLayer>1-48,8;1-34,9;15-44,29;10-60,35;3-27,44;6-46,45</elemLayer>
+		<pathLyaer>
+		</pathLyaer>
+	</map>
+	<map id="2" name="2v2测试地图" difficult="5">
+		<team id="1" home="0,0-2">
+			<member id='0' born='0,0'/>
+			<member id='1' born='0,0'/>
+		</team>
+		<team id="2" home="0,0-3">
+			<member id='0' born='0,0'/>
+			<member id='1' born='0,0'/>
+		</team>
+		<bgLayer>Tank_Bg_10</bgLayer>
+		<lowLayer>1-10,10;3-70,90</lowLayer>
+		<elemLayer>3-42,1;6-32,6;3-35,10;13-83,10;2-88,10;3-33,12;6-68,15;3-10,16;2-55,17;5-42,22;4-50,22;3-31,25;11-80,25;3-2,26;4-22,26;9-69,27;14-1,29;3-12,30;18-76,30;18-84,30;10-37,31;3-56,31;10-60,33;3-17,34;1-85,34;3-23,35;3-32,36;7-42,36;12-71,36;5-68,38;3-88,40;5-42,44;3-11,45;3-24,46;6-60,46;10-49,54</elemLayer>
+		<pathLyaer>32,37;31,36;33,36</pathLyaer>
+	</map>
 </maps>
