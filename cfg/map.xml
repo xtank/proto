@@ -1,91 +1,36 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--
-map:
-	id   地图id
-	name 地图名称
-	diffcult 地图难度 1~5
-team:
-	count 队伍最大人数
-	home id-x,y   老家 资源以及坐标位置
-	born  x,y  出生点
-bgLayer:
-	背景层
-elemLayer:
-	id-x,y
-pathLyaer: 
-	地形中不可通过的点集合
-	x1,y1;x2,y2
-	
- -->
 <maps>
-	<map id="1" name="3v3测试地图" difficult="5">
-		<team id="1" count="3" home="">
-			<member id="1" born=""/>
-			<member id="2" born=""/>
-			<member id="3" born=""/>
-		</team>
-		<team id="2" count="3" home="">
-			<member id="1" born=""/>
-			<member id="2" born=""/>
-			<member id="3" born=""/>
-		</team>
-
-		<bgLayer>Tank_Bg_10</bgLayer>
-		<elemLayer>
-			1-10,10;
-			1-42,6;
-			3-12,16;
-			2-88,10;
-			6-32,6;
-			5-42,44;
-			4-22,26;
-			3-42,1;
-			2-21,16;
-			3-32,36;
-			5-42,22;
-			3-2,26;
-			5-77,30;
-			3-88,40;
-		</elemLayer>
-		<pathLyaer>
-		</pathLyaer>
-		<topLayers>
-		</topLayers>
-	</map>
-	<map id="2" name="1v1测试地图" difficult="2">
-		<team id="1" count="1" home="">
-			<member id="1" born=""/>
-		</team>
-		<team id="2" count="1" home="">
-			<member id="1" born=""/>
-		</team>
-
-		<bgLayer>Tank_Bg_7</bgLayer>
-		<elemLayer>
-			1-41,0;1-42,0;
-		</elemLayer>
-		<pathLyaer>
-		</pathLyaer>
-		<topLayers>
-		</topLayers>
-	</map>
-	<map id="3" name="2v2测试地图" difficult="3">
-		<team id="1" count="2" home="">
-			<member id="1" born=""/>
-			<member id="2" born=""/>
-		</team>
-		<team id="2" count="2" home="">
-			<member id="1" born=""/>
-			<member id="2" born=""/>
-		</team>
-
-		<bgLayer>Tank_Bg_3</bgLayer>
-		<elemLayer>
-			1-41,0;1-42,0;
-		</elemLayer>
-		<pathLyaer>
-		</pathLyaer>
-		<topLayers>
-		</topLayers>
-	</map>
+<map id="1" name="3v3测试地图" difficult="5">
+<team id="1" home="0,0">
+<member id='0' born='0,0'/>
+<member id='1' born='0,0'/></team>
+<team id="2" home="0,0">
+<member id='0' born='0,0'/>
+<member id='1' born='0,0'/></team>
+<bgLayer>Tank_Bg_10</bgLayer>
+<lowLayer>1-10,10;3-70,90</lowLayer>
+<elemLayer>3-42,1;6-32,6;3-35,10;13-83,10;2-88,10;3-33,12;6-68,15;3-10,16;2-55,17;5-42,22;4-50,22;3-31,25;11-80,25;3-2,26;4-22,26;9-69,27;14-1,29;3-12,30;18-76,30;18-84,30;10-37,31;3-56,31;10-60,33;3-17,34;1-85,34;3-23,35;3-32,36;7-42,36;12-71,36;5-68,38;3-88,40;5-42,44;3-11,45;3-24,46;6-60,46;10-49,54</elemLayer>
+<pathLyaer>32,37;31,36;33,36</pathLyaer>
+</map>
+<map id="2" name="1v1测试地图" difficult="2">
+<team id="1" home="0,0">
+<member id='0' born='0,0'/></team>
+<team id="2" home="0,0">
+<member id='0' born='0,0'/></team>
+<bgLayer>Tank_Bg_7</bgLayer>
+<lowLayer>1-10,10;3-70,90</lowLayer>
+<elemLayer>1-48,8;1-34,9;15-44,29;10-60,35;3-27,44;6-46,45</elemLayer>
+<pathLyaer></pathLyaer>
+</map>
+<map id="3" name="2v2测试地图" difficult="3">
+<team id="1" home="0,0">
+<member id='0' born='0,0'/>
+<member id='1' born='0,0'/></team>
+<team id="2" home="0,0">
+<member id='0' born='0,0'/>
+<member id='1' born='0,0'/></team>
+<bgLayer>Tank_Bg_3</bgLayer>
+<lowLayer>1-10,10;3-70,90</lowLayer>
+<elemLayer>1-26,19;3-30,20;1-49,24;3-46,25;15-69,33</elemLayer>
+<pathLyaer></pathLyaer>
+</map>
 </maps>
