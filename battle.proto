@@ -2,6 +2,15 @@ package onlineproto;
 import "data.proto";
 
 
+message cs_inside_start{
+}
+
+// 广播包
+message sc_inside_start{
+    required battle_data_t battle_data = 1 ;
+}
+
+
 // 客户端资源准备完成后通知服务器的消息包
 message cs_battle_ready
 {

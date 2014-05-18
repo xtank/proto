@@ -28,14 +28,6 @@ message cs_inside_ready {
 message sc_inside_ready {
 }
 
-message cs_inside_start{
-}
-
-// 广播包
-message sc_inside_start{
-    required battle_data_t battle_data = 1 ;
-}
-
 message cs_notify_room_update{
 }
 

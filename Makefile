@@ -44,6 +44,7 @@ $(OBJ_FILES) : ../%.pb.o : ../%.pb.cc
 
 $(SRC_FILES) : ../%.pb.cc : %.proto
 	protoc --cpp_out=../ --proto_path=./ $<	
+	protoc --python_out=../../../python/proto --proto_path=./ $<	
 
 clean:
 	-rm $(SRC_FILES) $(INC_FILES) $(OBJ_FILES) $(CMD_INC_FILE) $(ERRNO_INC_FILE) $(TARGET) $(DEP_FILES) $(ATTR_INC_FILE)
