@@ -19,7 +19,7 @@ message cs_battle_ready
 
 message sc_battle_ready
 {
-
+	required uint32 userid = 1;
 }
 
 message cs_notify_battle_start
