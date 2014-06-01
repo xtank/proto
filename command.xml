@@ -30,4 +30,5 @@
 		<command id="305" name="cs_tank_move_stop" des="通知停止移动" cs="cs_tank_move_stop" sc="sc_tank_move_stop"/>
     </section>
 
+1
 </data>
