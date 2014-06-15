@@ -76,3 +76,79 @@ message sc_tank_move_stop
 	required uint32 stop_x = 2 ;
 	required uint32 stop_y = 3 ;
 }
+
+
+// 发炮协议
+message cs_tank_fire
+{
+	required uint32 atkUserId = 1 ;
+	required uint32 atk_x = 2 ;
+	required uint32 atk_y = 3 ;
+	required string fire_id = 4 ;  // userid_fireid
+	required uint32 fire_time = 5 ; // 开始移动的时间
+	required uint32 fire_dir = 6 ;
+}
+
+message sc_tank_fire
+{
+	required uint32 atkUserId = 1 ;
+	required uint32 atk_x = 2 ;
+	required uint32 atk_y = 3 ;
+	required string fire_id = 4 ;  // userid_fireid
+	required uint32 fire_time = 5 ; // 开始移动的时间
+	required uint32 fire_dir = 6 ;
+}
+
+// 同步坦克信息
+message cs_sync_tank_info
+{
+
+}
+
+message sc_sync_tank_info
+{
+	required uint32 userId = 1 ;
+	required uint32 hp = 2 ;
+	required uint32 x = 3 ;
+	required uint32 y = 4 ;
+	required uint32 dir = 5 ;
+}
+
+// 命中协议
+message cs_tank_hit
+{
+	required uint32 atkUserId = 1 ;
+	required string fire_id = 2 ;  // userid_fireid
+	required uint32 fire_x = 3 ;
+	required uint32 fire_y = 4 ;
+	required uint32 defUserId = 5 ;
+	required uint32 def_x = 6 ;
+	required uint32 def_y = 7 ;
+}
+
+message sc_tank_hit
+{
+	required uint32 atkUserId = 1 ;
+	required string fire_id = 2 ;  // userid_fireid
+	required uint32 fire_x = 3 ;
+	required uint32 fire_y = 4 ;
+	required uint32 defUserId = 5 ;
+	required uint32 def_x = 6 ;
+	required uint32 def_y = 7 ;
+	//
+	required uint32 hp = 8 ; // 扣掉的血量
+}
+
+//
+message cs_notify_check_failure
+{
+
+}
+
+message sc_notify_check_failure
+{
+	required uint32 atkUserId = 1 ;
+	required string fire_id = 2 ;  // userid_fireid
+	required uint32 defUserId = 3 ;
+}
+
