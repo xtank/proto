@@ -85,7 +85,7 @@ message cs_tank_fire
 	required uint32 atk_x = 2 ;
 	required uint32 atk_y = 3 ;
 	required string fire_id = 4 ;  // userid_fireid
-	required uint32 fire_time = 5 ; // 开始移动的时间
+	required uint32 fire_time = 5 ; // 开火的时间
 	required uint32 fire_dir = 6 ;
 }
 
@@ -95,7 +95,7 @@ message sc_tank_fire
 	required uint32 atk_x = 2 ;
 	required uint32 atk_y = 3 ;
 	required string fire_id = 4 ;  // userid_fireid
-	required uint32 fire_time = 5 ; // 开始移动的时间
+	required uint32 fire_time = 5 ; // 开火的时间
 	required uint32 fire_dir = 6 ;
 }
 
@@ -119,8 +119,8 @@ message cs_tank_hit
 {
 	required uint32 atkUserId = 1 ;
 	required string fire_id = 2 ;  // userid_fireid
-	required uint32 fire_x = 3 ;
-	required uint32 fire_y = 4 ;
+	required uint32 atk_x = 3 ;
+	required uint32 atk_y = 4 ;
 	required uint32 defUserId = 5 ;
 	required uint32 def_x = 6 ;
 	required uint32 def_y = 7 ;
@@ -130,8 +130,8 @@ message sc_tank_hit
 {
 	required uint32 atkUserId = 1 ;
 	required string fire_id = 2 ;  // userid_fireid
-	required uint32 fire_x = 3 ;
-	required uint32 fire_y = 4 ;
+	required uint32 atk_x = 3 ;
+	required uint32 atk_y = 4 ;
 	required uint32 defUserId = 5 ;
 	required uint32 def_x = 6 ;
 	required uint32 def_y = 7 ;

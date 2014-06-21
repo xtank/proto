@@ -28,6 +28,8 @@
 		<command id="303" name="cs_notify_member_leave" des="通知成员离线" cs="cs_notify_member_leave" sc="sc_notify_member_leave"/>
 		<command id="304" name="cs_tank_move" des="通知移动" cs="cs_tank_move" sc="sc_tank_move"/>
 		<command id="305" name="cs_tank_move_stop" des="通知停止移动" cs="cs_tank_move_stop" sc="sc_tank_move_stop"/>
+		<command id="306" name="cs_tank_fire" des="开火" cs="cs_tank_fire" sc="sc_tank_fire"/>
+		<command id="307" name="cs_tank_hit" des="被击中" cs="cs_tank_hit" sc="sc_tank_hit"/>
     </section>
 
 </data>
